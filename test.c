@@ -9,30 +9,42 @@ int main(){
 	int key = 1;
 	int x;
 	int y;
-	while (1){
+	while (key != 0){
 		printf("0. exit\n");
 		printf("1. swap_Temp\n");
 		printf("2. swap_Add\n");
 		printf("3. swap_Mul\n");
 		printf("4. swap_XOR\n");
 		scanf_s("%d", &key);
-		if (key == 0)
-			break;
-		printf("choose two integer.\n");
-		scanf_s("%d %d", &x, &y);
+
 		switch (key)
 		{
 		case 0:
 			break;
 		case 1:
-			swap_Temp(&x, &y); break;
+			printf("choose two integer.\n");
+			scanf_s("%d %d", &x, &y);
+			swap_Temp(&x, &y);
+			break;
 		case 2:
-			swap_Add(&x, &y); break;
+			printf("choose two integer.\n");
+			scanf_s("%d %d", &x, &y);
+			swap_Add(&x, &y);
+			break;
 		case 3:
-			swap_Mul(&x, &y); break;
+			printf("choose two integer.\n");
+			scanf_s("%d %d", &x, &y);
+			swap_Mul(&x, &y);
+			break;
 		case 4:
-			swap_XOR(&x, &y); break;
+			printf("choose two integer.\n");
+			scanf_s("%d %d", &x, &y);
+			swap_XOR(&x, &y);
+			break;
+		default:
+			break;
 		}
+
 		printf("\n\n");
 	}
 
